@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  Home - {{ block.super }}
+{% endblock %}
+
+{% block body %}
+  <br />
+  <b>Home</b>
+  <br />
+  <a href="{% url 'categories:add_category' %}">Adicionar Categoria</a>
+{% endblock %}
